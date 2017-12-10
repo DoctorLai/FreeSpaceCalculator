@@ -1,8 +1,8 @@
 <form class='form-inline'>
-Frequency (MHz): <input type=number id=mhz value=947>
-Distance (Meter): <input type=number id=meter value=100>
-Transmitter Antenna Gain (dBi): <input type=number id=gt value=0>
-Receiver Antenna Gain (dBi): <input type=number id=gr value=0>
-<input type=button id=compute value="Calculate Path Loss" onclick="javascript:var mhz=parseFloat(document.getElementById('mhz').value);var meter=parseFloat(document.getElementById('meter').value);var gt=parseFloat(document.getElementById('gt').value);var gr=parseFloat(document.getElementById('gr').value);document.getElementById('pl').value=20*Math.log10(mhz*meter*0.001)+32.45-gt-gr;">
-Path Loss (dB): <input type=number id=pl readonly>
+  Frequency (MHz): <input type=number id=mhz value=947>
+  Distance (Meter): <input type=number id=meter value=100>
+  Transmitter Antenna Gain (dBi): <input type=number id=gt value=0>
+  Receiver Antenna Gain (dBi): <input type=number id=gr value=0>
+  <input type=button id=compute value="Calculate Path Loss" onclick="javascript:var mhz=parseFloat(document.getElementById('mhz').value);var meter=parseFloat(document.getElementById('meter').value);var gt=parseFloat(document.getElementById('gt').value);var gr=parseFloat(document.getElementById('gr').value);document.getElementById('pl').value=20*Math.log10(mhz*meter*0.001)+32.45-gt-gr;">
+  Path Loss (dB): <input type=number id=pl readonly>
 </form>
